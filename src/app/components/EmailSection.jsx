@@ -54,13 +54,17 @@ const ContactSection = () => {
           Feel free to reach out for any inquiries or just to say hi!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
-            <img src={GithubIcon} alt="Github Icon" className="cursor-pointer" />
-          </Link>
-          <Link href="linkedin.com">
-            <img src={LinkedinIcon} alt="Linkedin Icon" className="cursor-pointer" />
-          </Link>
-        </div>
+      <Link href="https://t.me/your_telegram_link" passHref>
+        <button className="cursor-pointer bg-gradient-to-r from-primary-400 to-secondary-600 text-white py-2 px-4 rounded">
+          Telegram
+        </button>
+      </Link>
+      <Link href="https://twitter.com/your_twitter_link" passHref>
+        <button className="cursor-pointer bg-gradient-to-r from-primary-400 to-secondary-600 text-white py-2 px-4 rounded">
+          Twitter
+        </button>
+      </Link>
+    </div>
       </div>
       <div>
         {emailSubmitted ? (

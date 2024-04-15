@@ -26,8 +26,7 @@ const Navbar = () => {
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <div className="flex items-center">
           <div className="flex items-center text-white font-semibold">
-            <img src="/images/IMG_2113 2.svg" alt="Logo" className="h-10 md:h-20 mr-2" />
-            SNIPEX
+            SNIPEX.
           </div>
         </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">
