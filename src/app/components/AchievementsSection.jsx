@@ -37,16 +37,16 @@ const SupportedCryptosSlider = () => {
   };
 
   return (
-    <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+    <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 bg-gradient-to-r from-primary-600 to-secondary-600 max-w-screen-xl mx-auto">
       <Slider {...settings}>
         <div>
-          <img src="/images/snipexbnbbo-medium.png" alt="Binance Coin" className="mx-auto w-150 h-24" />
+          <img src="/images/snipexbnbbo-medium-removebg-preview.png" alt="Binance Coin" className="mx-auto w-200 h-40" />
         </div>
         <div>
-          <img src="/images/snipexeth.png" alt="Ethereum" className="mx-auto w-150 h-24" />
+          <img src="/images/snipexeth-removebg-preview.png" alt="Ethereum" className="mx-auto w-200 h-40" />
         </div>
         <div>
-          <img src="/images/solana-logo-vector.png" alt="Solana" className="mx-auto w-150 h-24" />
+          <img src="/images/solana-logo-vector-removebg-preview.png" alt="Solana" className="mx-auto w-200 h-40" />
         </div>
         {/* Add more supported cryptocurrencies logos here */}
       </Slider>

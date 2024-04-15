@@ -50,9 +50,8 @@ const AboutSection = () => {
 
   return (
     <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/SXNpng_3x-removebg-preview.png" width={500} height={500} alt="Snipex" />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+      <div className="sm:grid sm:grid-cols-2 gap-8 items-center py-8 px-4 md:gap-16 sm:py-16 md:px-16">
+        <div className="text-center sm:text-left">
           <h2 className="text-4xl font-bold text-white mb-4">About Snipex</h2>
           <p className="text-base lg:text-lg">
             Snipex is a leading provider of cutting-edge sniper bot technologies,
@@ -62,7 +61,7 @@ const AboutSection = () => {
             We offer tailored services to meet your specific needs and ensure
             optimal performance in every operation.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-row justify-center sm:justify-start mt-8 space-x-4">
             {TAB_DATA.map((tabItem) => (
               <TabButton
                 key={tabItem.id}
@@ -76,6 +75,9 @@ const AboutSection = () => {
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
+        </div>
+        <div className="text-center sm:text-left">
+          <Image src="/SXNpng_3x-removebg-preview.png" width={500} height={500} alt="Snipex" />
         </div>
       </div>
     </section>
